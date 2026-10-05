@@ -1,0 +1,9 @@
+{
+  "name": "parkhaus",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/with-app-env.mjs vite build && npm run db:migrate",
+    "db:migrate": "node scripts/migrate.mjs"
+  }
+}
